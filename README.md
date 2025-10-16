@@ -1,4 +1,4 @@
-# 📖 Libro 5 — Dominio Público (CC0 1.0)
+# Libro 5 de LA HUELLA OSCILANTE Proyecto — Dominio Público (CC0 1.0)
 
 Este repositorio contiene borradores y materiales abiertos del **Libro 5**,  
 un proyecto literario y filosófico en desarrollo publicado por **Ernesto Cisneros Cino**.
