@@ -56,66 +56,329 @@ $$
 
 ---
 
-# 2. Fundamentos Teóricos
+2. Fundamentos Teóricos
+2.1 Espacio de Krein, pseudo-Hermitismo y proyección física
 
-## 2.1 Espacio de Krein, pseudo-Hermitismo y proyección física
+Usamos un espacio con métrica indefinida (tipo Krein) para alojar un grado de libertad taquiónico sin perder unitariedad en el subespacio físico. La métrica:
 
-Usamos un espacio con métrica indefinida (tipo **Krein**) para alojar un grado de libertad taquiónico sin perder unitariedad en el subespacio físico. La métrica:
-$$
-\eta \;=\; \mathrm{diag}(-1,\,+1)
-$$
+𝜂
+=
+d
+i
+a
+g
+(
+−
+1
+,
++
+1
+)
+η=diag(−1,+1)
+
 actúa sobre el par de campos $(\phi,\chi)$, asignando signatura negativa al sector taquiónico.
 
-**Hamiltoniano homogéneo (modos de fondo):**
-$$
-H_{\text{tot}} \;=\;
-\Big(\tfrac12 p_\phi^2 - \tfrac12 m_\phi^2 \phi^2 + \tfrac{\lambda_\phi}{4}\phi^4\Big)
-+ \Big(\tfrac12 p_\chi^2 + \tfrac12 m_\chi^2 \chi^2 + \tfrac{\lambda_\chi}{4}\chi^4\Big)
-+ \tfrac12 g^2 \phi^2 \chi^2 + V_0 .
-$$
+Hamiltoniano homogéneo (modos de fondo):
 
-La inestabilidad de $\phi$ (masa imaginaria efectiva) no se interpreta como un fallo, sino como una consecuencia de la signatura: el grado de libertad “en sombra” se controla a nivel geométrico.
+𝐻
+tot
+=
+(
+1
+2
+𝑝
+𝜙
+2
+−
+1
+2
+𝑚
+𝜙
+2
+𝜙
+2
++
+𝜆
+𝜙
+4
+𝜙
+4
+)
++
+(
+1
+2
+𝑝
+𝜒
+2
++
+1
+2
+𝑚
+𝜒
+2
+𝜒
+2
++
+𝜆
+𝜒
+4
+𝜒
+4
+)
++
+1
+2
+𝑔
+2
+𝜙
+2
+𝜒
+2
++
+𝑉
+0
+.
+H
+tot
+	​
 
-**Pseudo-Hermitismo y espectro real.**  
+=(
+2
+1
+	​
+
+p
+ϕ
+2
+	​
+
+−
+2
+1
+	​
+
+m
+ϕ
+2
+	​
+
+ϕ
+2
++
+4
+λ
+ϕ
+	​
+
+	​
+
+ϕ
+4
+)+(
+2
+1
+	​
+
+p
+χ
+2
+	​
+
++
+2
+1
+	​
+
+m
+χ
+2
+	​
+
+χ
+2
++
+4
+λ
+χ
+	​
+
+	​
+
+χ
+4
+)+
+2
+1
+	​
+
+g
+2
+ϕ
+2
+χ
+2
++V
+0
+	​
+
+.
+
+La inestabilidad de $\phi$ (masa imaginaria efectiva) no se interpreta como un fallo, sino como consecuencia de la signatura: el grado de libertad “en sombra” se controla a nivel geométrico.
+
+Pseudo-Hermitismo y espectro real.
 Introducimos un operador de forma $C$ (involución, $C^2=\mathbb{1}$) tal que $[C,H_{\text{tot}}]=0$. Definimos métrica efectiva positiva en el subespacio físico:
-$$
-\eta_C \;\equiv\; C\,\eta \;>\; 0 \;\;\; \text{en } \mathcal{H}_\text{phys},
-$$
-con lo cual se cumple la relación de pseudo-Hermitismo
-$$
-H_{\text{tot}}^{\dagger} \;=\; \eta_C\, H_{\text{tot}}\, \eta_C^{-1},
-$$
-que garantiza **espectro real** y **evolución unitaria** en $\mathcal{H}_\text{phys}$.
 
-**Proyector físico:**
-$$
-\Pi_{\text{phys}} \;=\; \tfrac12\big(\mathbb{1}+C\big).
-$$
+𝜂
+𝐶
+≡
+𝐶
+ 
+𝜂
+>
+0
+en 
+𝐻
+phys
+,
+η
+C
+	​
 
-> Intuición: el par $(\eta, C)$ reetiqueta normas para que el sector observable tenga norma positiva; el sector de norma negativa queda suprimido dinámicamente.
+≡Cη>0en H
+phys
+	​
 
----
+,
 
-## 2.2 Selección dinámica del subespacio físico
+con lo cual se cumple
 
-En presencia de expansión y ruido coloreado (secciones 3–5), la combinación **disipación cosmológica** $3H$ + **ruido con memoria** (Ornstein–Uhlenbeck) actúa como un **filtro dinámico**:
-- amortigua los modos con norma negativa,
-- estabiliza una órbita atractora en el subespacio físico,
-- y preserva la unitariedad efectiva al nivel de observables.
+𝐻
+tot
+†
+=
+𝜂
+𝐶
+ 
+𝐻
+tot
+ 
+𝜂
+𝐶
+−
+1
+,
+H
+tot
+†
+	​
 
-Esta selección no “rompe” la teoría: emerge de la geometría (vía el horizonte) y del carácter no blanco del ruido.
+=η
+C
+	​
 
-**Ecuación de Friedmann (recordatorio):**
-$$
-H^2 \;=\; \rho_{\text{tot}}
-\;=\;
-\tfrac12\!\left(\dot\phi^2+\dot\chi^2\right)
-+ V(\phi,\chi).
-$$
+H
+tot
+	​
 
-> Puente hacia la Sección 3: especificaremos el **ruido OU** ligado a la temperatura del horizonte
-$T_{GH}=\tfrac{H}{2\pi}$, y mostraremos cómo la **memoria** $\tau$ controla la coherencia del atractor.
+η
+C
+−1
+	​
 
+,
+
+lo que garantiza espectro real y evolución unitaria en $\mathcal{H}_\text{phys}$.
+
+Proyector físico:
+
+Π
+phys
+=
+1
+2
+(
+1
++
+𝐶
+)
+.
+Π
+phys
+	​
+
+=
+2
+1
+	​
+
+(1+C).
+
+Intuición: el par $(\eta,C)$ reetiqueta normas para que el sector observable tenga norma positiva; el sector de norma negativa queda suprimido dinámicamente.
+
+2.2 Selección dinámica del subespacio físico
+
+Con expansión y ruido coloreado (secciones 3–5), la combinación disipación cosmológica $3H$ + ruido con memoria (Ornstein–Uhlenbeck) actúa como filtro dinámico:
+
+amortigua los modos con norma negativa,
+
+estabiliza una órbita atractora en el subespacio físico,
+
+y preserva la unitariedad efectiva al nivel de observables.
+
+Ecuación de Friedmann (recordatorio):
+
+𝐻
+2
+=
+𝜌
+tot
+=
+1
+2
+(
+𝜙
+˙
+2
++
+𝜒
+˙
+2
+)
++
+𝑉
+(
+𝜙
+,
+𝜒
+)
+.
+H
+2
+=ρ
+tot
+	​
+
+=
+2
+1
+	​
+
+(
+ϕ
+˙
+	​
+
+2
++
+χ
+˙
+	​
+
+2
+)+V(ϕ,χ).
+
+Puente a la Sección 3: especificaremos el ruido OU ligado a la temperatura del horizonte $T_{GH}=\tfrac{H}{2\pi}$ y mostraremos cómo la memoria $\tau$ controla la coherencia del atractor.
 
 ---
 
