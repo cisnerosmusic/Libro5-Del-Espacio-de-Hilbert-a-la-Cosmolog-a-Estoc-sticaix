@@ -13,9 +13,11 @@ Presentamos un modelo cosmológico estocástico que vincula:
 (i) una extensión pseudo-Hermítica del espacio de Hilbert (espacio de Krein),  
 (ii) una dinámica de dos campos escalares acoplados $(\phi,\chi)$ —con $\phi$ taquiónico y $\chi$ estable—, y  
 (iii) ruido coloreado de Ornstein–Uhlenbeck cuya intensidad está fijada por la temperatura de Gibbons–Hawking
+
 $$
 T_{GH}=\frac{H}{2\pi}.
 $$
+
 Mostramos atractores oscilatorios (ciclos límite estocásticos) y transiciones efectivas entre regímenes *matter-like* ($w\approx 0$) y *vacuum-like* ($w\approx -1$). La memoria del ruido (tiempo de correlación $\tau$) resulta necesaria para la resiliencia cosmológica.
 
 ---
@@ -56,337 +58,293 @@ $$
 
 ---
 
-2. Fundamentos Teóricos
-2.1 Espacio de Krein, pseudo-Hermitismo y proyección física
+# 2. Fundamentos Teóricos
 
-Usamos un espacio con métrica indefinida (tipo Krein) para alojar un grado de libertad taquiónico sin perder unitariedad en el subespacio físico. La métrica:
+## 2.1 Espacio de Krein, pseudo-Hermitismo y proyección física
 
-𝜂
-=
-d
-i
-a
-g
-(
-−
-1
-,
-+
-1
-)
-η=diag(−1,+1)
+Usamos un espacio con métrica indefinida (tipo **Krein**) para alojar un grado de libertad taquiónico sin perder unitariedad en el subespacio físico. La métrica:
 
-actúa sobre el par de campos $(\phi,\chi)$, asignando signatura negativa al sector taquiónico.
+$$
+\eta \;=\; \mathrm{diag}(-1,+1)
+$$
 
-Hamiltoniano homogéneo (modos de fondo):
+actúa sobre el par de campos $(\phi,\chi)$, asignando signatura negativa al sector taquiónico y positiva al estable.
 
-𝐻
-tot
-=
-(
-1
-2
-𝑝
-𝜙
-2
-−
-1
-2
-𝑚
-𝜙
-2
-𝜙
-2
-+
-𝜆
-𝜙
-4
-𝜙
-4
-)
-+
-(
-1
-2
-𝑝
-𝜒
-2
-+
-1
-2
-𝑚
-𝜒
-2
-𝜒
-2
-+
-𝜆
-𝜒
-4
-𝜒
-4
-)
-+
-1
-2
-𝑔
-2
-𝜙
-2
-𝜒
-2
-+
-𝑉
-0
-.
-H
-tot
-	​
+**Hamiltoniano homogéneo (modos de fondo):**
 
-=(
-2
-1
-	​
+$$
+H_{\text{tot}} \;=\;
+\Big(\tfrac12 p_\phi^2 \;-\; \tfrac12 m_\phi^2\,\phi^2 \;+\; \tfrac{\lambda_\phi}{4}\,\phi^4\Big)
+\;+\;
+\Big(\tfrac12 p_\chi^2 \;+\; \tfrac12 m_\chi^2\,\chi^2 \;+\; \tfrac{\lambda_\chi}{4}\,\chi^4\Big)
+\;+\;
+\tfrac12 g^2\,\phi^2\chi^2 \;+\; V_0 \,.
+$$
 
-p
-ϕ
-2
-	​
+La inestabilidad de $\phi$ (masa imaginaria efectiva) no es un “fallo”: es una consecuencia de la signatura de $\eta$. El sector “en sombra” se controla a nivel geométrico.
 
-−
-2
-1
-	​
+**Pseudo-Hermitismo y espectro real.** Introducimos un operador de forma $C$ (involución, $C^2=\mathbb{1}$) tal que $[C,H_{\text{tot}}]=0$. Definimos la métrica positiva efectiva en el subespacio físico:
 
-m
-ϕ
-2
-	​
-
-ϕ
-2
-+
-4
-λ
-ϕ
-	​
-
-	​
-
-ϕ
-4
-)+(
-2
-1
-	​
-
-p
-χ
-2
-	​
-
-+
-2
-1
-	​
-
-m
-χ
-2
-	​
-
-χ
-2
-+
-4
-λ
-χ
-	​
-
-	​
-
-χ
-4
-)+
-2
-1
-	​
-
-g
-2
-ϕ
-2
-χ
-2
-+V
-0
-	​
-
-.
-
-La inestabilidad de $\phi$ (masa imaginaria efectiva) no se interpreta como un fallo, sino como consecuencia de la signatura: el grado de libertad “en sombra” se controla a nivel geométrico.
-
-Pseudo-Hermitismo y espectro real.
-Introducimos un operador de forma $C$ (involución, $C^2=\mathbb{1}$) tal que $[C,H_{\text{tot}}]=0$. Definimos métrica efectiva positiva en el subespacio físico:
-
-𝜂
-𝐶
-≡
-𝐶
- 
-𝜂
->
-0
-en 
-𝐻
-phys
-,
-η
-C
-	​
-
-≡Cη>0en H
-phys
-	​
-
-,
+$$
+\eta_C \;\equiv\; C\,\eta \;>\; 0 \quad \text{en } \mathcal{H}_{\text{phys}} \,,
+$$
 
 con lo cual se cumple
 
-𝐻
-tot
-†
-=
-𝜂
-𝐶
- 
-𝐻
-tot
- 
-𝜂
-𝐶
-−
-1
-,
-H
-tot
-†
-	​
+$$
+H_{\text{tot}}^{\dagger} \;=\; \eta_C \, H_{\text{tot}} \, \eta_C^{-1} \,,
+$$
 
-=η
-C
-	​
+garantizando **espectro real** y **evolución unitaria** en $\mathcal{H}_{\text{phys}}$.
 
-H
-tot
-	​
+**Proyector físico:**
 
-η
-C
-−1
-	​
+$$
+\Pi_{\text{phys}} \;=\; \tfrac12\big(\mathbb{1}+C\big) \,.
+$$
 
-,
+> Intuición: el par $(\eta,C)$ reetiqueta normas para que el sector observable tenga norma positiva; el sector de norma negativa queda suprimido dinámicamente.
 
-lo que garantiza espectro real y evolución unitaria en $\mathcal{H}_\text{phys}$.
+## 2.2 Selección dinámica del subespacio físico
 
-Proyector físico:
+En presencia de expansión y **ruido coloreado** (secciones 3–5), la combinación **disipación cosmológica** $3H$ + **ruido con memoria** (Ornstein–Uhlenbeck) actúa como **filtro dinámico**:
+- amortigua los modos con norma negativa,
+- estabiliza una órbita atractora en el subespacio físico,
+- y preserva la unitariedad efectiva a nivel de observables.
 
-Π
-phys
-=
-1
-2
-(
-1
-+
-𝐶
-)
-.
-Π
-phys
-	​
+**Ecuación de Friedmann (recordatorio):**
 
-=
-2
-1
-	​
+$$
+H^2 \;=\; \rho_{\text{tot}}
+\;=\;
+\tfrac12\!\left(\dot\phi^2+\dot\chi^2\right)
+\;+\; V(\phi,\chi) \,.
+$$
 
-(1+C).
+**Temperatura del horizonte (para el ruido ligado a la geometría):**
 
-Intuición: el par $(\eta,C)$ reetiqueta normas para que el sector observable tenga norma positiva; el sector de norma negativa queda suprimido dinámicamente.
+$$
+T_{GH} \;=\; \tfrac{H}{2\pi} \,.
+$$
 
-2.2 Selección dinámica del subespacio físico
+> Puente a la Sección 3: definiremos el **ruido OU** con intensidad regulada por $T_{GH}$ y mostraremos cómo el **tiempo de correlación** $\tau$ controla la coherencia del atractor y las transiciones *matter-like* / *vacuum-like*.
 
-Con expansión y ruido coloreado (secciones 3–5), la combinación disipación cosmológica $3H$ + ruido con memoria (Ornstein–Uhlenbeck) actúa como filtro dinámico:
 
-amortigua los modos con norma negativa,
 
-estabiliza una órbita atractora en el subespacio físico,
 
-y preserva la unitariedad efectiva al nivel de observables.
+# 3. Modelo Cosmológico y Ruido Autoconsistente
 
-Ecuación de Friedmann (recordatorio):
+## 3.1 Campos, potencial y expansión
 
-𝐻
-2
-=
-𝜌
-tot
-=
-1
-2
-(
-𝜙
-˙
-2
-+
-𝜒
-˙
-2
-)
-+
-𝑉
-(
-𝜙
-,
-𝜒
-)
-.
-H
-2
-=ρ
-tot
-	​
+Consideramos dos campos escalares acoplados en un universo FRW plano. El potencial:
 
-=
-2
-1
-	​
+$$
+V(\phi,\chi) \;=\; 
+-\tfrac12 m_\phi^2\,\phi^2 \;+\; \tfrac{\lambda_\phi}{4}\phi^4
+\;+\; \tfrac12 m_\chi^2\,\chi^2 \;+\; \tfrac{\lambda_\chi}{4}\chi^4
+\;+\; \tfrac12 g^2\,\phi^2\chi^2 \;+\; V_0 \,.
+$$
 
-(
-ϕ
-˙
-	​
+Ecuación de Friedmann (unidades \(8\pi G=1\)):
 
-2
-+
-χ
-˙
-	​
+$$
+H^2 \;=\; \rho_{\text{tot}} 
+\;=\; \tfrac12\!\left(\dot\phi^2+\dot\chi^2\right) \;+\; V(\phi,\chi) \,.
+$$
 
-2
-)+V(ϕ,χ).
+## 3.2 Ruido de Ornstein–Uhlenbeck ligado a la geometría
 
-Puente a la Sección 3: especificaremos el ruido OU ligado a la temperatura del horizonte $T_{GH}=\tfrac{H}{2\pi}$ y mostraremos cómo la memoria $\tau$ controla la coherencia del atractor.
+El ruido está **autoconsistentemente** regulado por la temperatura del horizonte:
+
+$$
+T_{GH} \;=\; \tfrac{H}{2\pi}\,,
+$$
+
+y cada campo recibe una fuerza estocástica con **memoria** (tiempos de correlación $\tau_\phi,\tau_\chi$):
+
+**Procesos OU (esquema continuo):**
+
+$$
+\[
+\dot\zeta_\phi \;=\; -\frac{\zeta_\phi}{\tau_\phi}
+\;+\; \sqrt{\frac{2\,\Gamma_\phi\,T_{GH}}{\tau_\phi^2}}\,\xi_\phi(t)\,,
+\qquad
+\dot\zeta_\chi \;=\; -\frac{\zeta_\chi}{\tau_\chi}
+\;+\; \sqrt{\frac{2\,\Gamma_\chi\,T_{GH}}{\tau_\chi^2}}\,\xi_\chi(t)\,,
+\]
+$$
+
+donde $\xi_i(t)$ son ruidos blancos unitarios y $\Gamma_i=\alpha_i\,3H$.
+
+**Ecuaciones de movimiento con disipación + ruido:**
+
+$$
+\[
+\ddot\phi \;=\; -3H\,\dot\phi \;-\; \partial_\phi V \;+\; \zeta_\phi\,,
+\qquad
+\ddot\chi \;=\; -3H\,\dot\chi \;-\; \partial_\chi V \;+\; \zeta_\chi\,.
+\]
+$$
+
+
+# 4. Método Numérico
+
+## 4.1 Integración Euler–Maruyama (SDEs)
+
+Usamos un paso fijo $\Delta t$ y actualizamos en el orden: ruido $\to$ velocidades $\to$ campos $\to$ geometría.
+
+**Discretización de los procesos OU** (para $i\in\{\phi,\chi\}$):
+
+$$
+\zeta_i^{\,n+1}
+\;=\;
+\zeta_i^{\,n}
+\;-\;
+\frac{\Delta t}{\tau_i}\,\zeta_i^{\,n}
+\;+\;
+\sqrt{\frac{2\,\Gamma_i^{\,n}\,T_{GH}^{\,n}}{\tau_i^{\,2}}\,\Delta t}\;\;\mathcal{N}_i^{\,n}\,,
+$$
+
+donde $\mathcal{N}_i^{\,n}\sim \mathcal{N}(0,1)$ independientes, $\Gamma_i^{\,n}=\alpha_i\,3H^{\,n}$ y $T_{GH}^{\,n}=\dfrac{H^{\,n}}{2\pi}$.
+
+**Ecuaciones de movimiento (velocidades y campos):**
+
+$$
+\dot\phi^{\,n+1}
+\;=\;
+\dot\phi^{\,n}
+\;+\;
+\Big(-3H^{\,n}\dot\phi^{\,n}-\partial_\phi V(\phi^{\,n},\chi^{\,n})+\zeta_\phi^{\,n}\Big)\,\Delta t\,,
+$$
+
+$$
+\dot\chi^{\,n+1}
+\;=\;
+\dot\chi^{\,n}
+\;+\;
+\Big(-3H^{\,n}\dot\chi^{\,n}-\partial_\chi V(\phi^{\,n},\chi^{\,n})+\zeta_\chi^{\,n}\Big)\,\Delta t\,,
+$$
+
+$$
+\phi^{\,n+1}
+\;=\;
+\phi^{\,n}
+\;+\;
+\dot\phi^{\,n+1}\,\Delta t\,,
+\qquad
+\chi^{\,n+1}
+\;=\;
+\chi^{\,n}
+\;+\;
+\dot\chi^{\,n+1}\,\Delta t\,.
+$$
+
+**Cierre geométrico (Friedmann) y temperatura del horizonte:**
+
+$$
+H^{\,n+1}
+\;=\;
+\sqrt{
+\tfrac12\Big[(\dot\phi^{\,n+1})^2+(\dot\chi^{\,n+1})^2\Big]
+\;+\;
+V(\phi^{\,n+1},\chi^{\,n+1})
+}\,,
+\qquad
+T_{GH}^{\,n+1}
+\;=\;
+\frac{H^{\,n+1}}{2\pi}\,.
+$$
+
+> Nota: el orden “actualiza $\zeta$ $\rightarrow$ actualiza $(\dot\phi,\dot\chi)$ $\rightarrow$ actualiza $(\phi,\chi)$ $\rightarrow$ recalcula $(H,T_{GH})$” mantiene la autoconsistencia a cada paso.
 
 ---
 
-# 3. Modelo Cosmológico y Ruido Autoconsistente
-*(…)*
+## 4.2 Estabilidad y elección de $\Delta t$
 
-# 4. Método Numérico
-*(…)*
+Para estabilidad numérica, elige
+
+$$
+\Delta t \;\ll\; \min\!\big(\tau_\phi,\;\tau_\chi,\;H^{-1},\;m_\phi^{-1},\;m_\chi^{-1}\big)\,,
+$$
+
+y verifica que las variaciones relativas por paso sean pequeñas:
+
+$$
+\frac{|\Delta H|}{H}\ll 1,
+\quad
+\frac{|\Delta \phi|}{\max(1,|\phi|)}\ll 1,
+\quad
+\frac{|\Delta \chi|}{\max(1,|\chi|)}\ll 1\,.
+$$
+
+> Recomendación práctica inicial: usar $\Delta t$ entre $10^{-3}$ y $10^{-2}$ (en unidades adimensionales del modelo) y reducir si observas inestabilidades o explosiones numéricas.
+
+---
+
+## 4.3 Observables efectivos
+
+**Densidades parciales y presión:**
+
+$$
+\rho_\phi \;=\; \tfrac12\,\dot\phi^{\,2} \;+\; V_\phi,
+\qquad
+\rho_\chi \;=\; \tfrac12\,\dot\chi^{\,2} \;+\; V_\chi,
+\qquad
+p \;=\; \tfrac12\big(\dot\phi^{\,2}+\dot\chi^{\,2}\big) \;-\; \big(V_\phi+V_\chi\big)\,,
+$$
+
+donde $V_\phi$ y $V_\chi$ son las contribuciones de $V(\phi,\chi)$ asociadas a cada campo.
+
+**Fracciones y ecuación de estado total:**
+
+$$
+\rho \;=\; \rho_\phi+\rho_\chi,\qquad
+\Omega_\phi \;=\; \frac{\rho_\phi}{\rho},\quad
+\Omega_\chi \;=\; \frac{\rho_\chi}{\rho},\qquad
+w_{\text{total}} \;=\; \frac{p}{\rho}\,.
+$$
+
+Para reducir ruido instantáneo, usa promedios móviles:
+
+$$
+\overline{w}_{\,\text{total}}(t_k)
+\;=\;
+\frac{1}{M}\sum_{j=0}^{M-1} w_{\text{total}}(t_{k-j})\,,
+$$
+
+con una ventana $M$ tal que $M\,\Delta t$ sea varias veces el período oscilatorio del atractor.
+
+---
+
+## 4.4 Ensamble y semillas
+
+Para estimar promedios de conjunto y dispersión, ejecuta $N_{\text{real}}$ simulaciones independientes con distintas semillas:
+
+$$
+\langle \mathcal{O} \rangle \;\approx\; \frac{1}{N_{\text{real}}}\sum_{r=1}^{N_{\text{real}}}\mathcal{O}^{(r)}\,,
+\qquad
+\mathrm{Var}(\mathcal{O}) \;\approx\; \frac{1}{N_{\text{real}}-1}\sum_{r=1}^{N_{\text{real}}}\Big(\mathcal{O}^{(r)}-\langle \mathcal{O} \rangle\Big)^2\,.
+$$
+
+> Sugerencia: usa $N_{\text{real}}\in[16,64]$ para estadística razonable; guarda $\{\phi,\dot\phi,\chi,\dot\chi,H,w_{\text{total}},\Omega_\phi,\Omega_\chi\}$ a intervalos regulares para construir espectros y promedios.
+
+---
+
+## 4.5 Criterios de parada
+
+Detén la integración cuando se cumpla alguno de:
+- tiempo máximo $t_{\max}$ alcanzado;
+- cambio relativo pequeño por varias ventanas:
+
+  
+$$
+\frac{|\overline{w}_{\,\text{total}}(t)-\overline{w}_{\,\text{total}}(t-\Delta T)|}{\max\!\big(1,\;|\overline{w}_{\,\text{total}}(t-\Delta T)|\big)} \;\le\; \epsilon\,,
+$$
+
+- estacionariedad aproximada en $H$ y en la amplitud del ciclo (análisis de picos en el espectro).
+
+Parámetros guía: $\epsilon\sim 10^{-3}$, $\Delta T$ de varias veces el período fundamental del atractor.
+
 
 # 5. Resultados Principales
 *(…)*
