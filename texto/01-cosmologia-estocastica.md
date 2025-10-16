@@ -1,17 +1,3 @@
-> **Navegación:** [Indice](00-indice.md) · [Referencias](../referencias.md)
-
-**Contenido rápido:**  
-[1. Introducción y Motivación](#1-introducción-y-motivación) ·
-[2. Fundamentos Teóricos](#2-fundamentos-teóricos) ·
-[3. Modelo y Ruido](#3-modelo-cosmológico-y-ruido-autoconsistente) ·
-[4. Método Numérico](#4-método-numérico) ·
-[5. Resultados](#5-resultados-principales) ·
-[6. Discusión](#6-discusión-y-comparación) ·
-[7. Conclusiones](#7-conclusiones) ·
-[Apéndices](#apéndice-a--estructura-pseudo-hermítica-krein-resumida) ·
-[Referencias](../referencias.md)
-
-
 ---
 title: "Del Espacio de Hilbert a la Cosmología Estocástica"
 subtitle: "Un Modelo de Dos Campos con Ruido Cuántico Ligado a la Geometría del Universo"
@@ -700,5 +686,4 @@ Empíricamente,
 
 ---
 
-> **Navegación:** [Indice](00-indice.md) · [Referencias](../referencias.md)
 
