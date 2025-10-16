@@ -1,3 +1,17 @@
+> **Navegación:** [Indice](00-indice.md) · [Referencias](../referencias.md)
+
+**Contenido rápido:**  
+[1. Introducción y Motivación](#1-introducción-y-motivación) ·
+[2. Fundamentos Teóricos](#2-fundamentos-teóricos) ·
+[3. Modelo y Ruido](#3-modelo-cosmológico-y-ruido-autoconsistente) ·
+[4. Método Numérico](#4-método-numérico) ·
+[5. Resultados](#5-resultados-principales) ·
+[6. Discusión](#6-discusión-y-comparación) ·
+[7. Conclusiones](#7-conclusiones) ·
+[Apéndices](#apéndice-a--estructura-pseudo-hermítica-krein-resumida) ·
+[Referencias](../referencias.md)
+
+
 ---
 title: "Del Espacio de Hilbert a la Cosmología Estocástica"
 subtitle: "Un Modelo de Dos Campos con Ruido Cuántico Ligado a la Geometría del Universo"
@@ -23,6 +37,9 @@ Mostramos atractores oscilatorios (ciclos límite estocásticos) y transiciones 
 ---
 
 # 1. Introducción y Motivación
+
+> **Autor:** Ernesto Cisneros Cino · **Lugar/Año:** Miami, 2025 · **Licencia:** CC0 1.0 (Dominio público)
+
 
 La pregunta central es si podemos modelar la energía oscura y la materia oscura **sin** introducir entidades exóticas adicionales, sino emergiendo de la **geometría** y del **ruido cuántico** asociado al horizonte. Proponemos tres ideas simples:
 
@@ -680,3 +697,8 @@ Empíricamente,
 [12] **Bender, C. M.** (2005). *Introduction to PT-Symmetric Quantum Theory*. **Contemporary Physics** 46, 277–292. DOI: 10.1080/00107500072632.
 
 [13] **Grimbert, E., & Rigopoulos, G.** (2024). *Stochastic inflation with colored noise* (ejemplo reciente sobre memoria en ruido). **JCAP** 03, 015. DOI: 10.1088/1475-7516/2024/03/015.
+
+---
+
+> **Navegación:** [Indice](00-indice.md) · [Referencias](../referencias.md)
+
