@@ -548,7 +548,13 @@ $$
 \eta \;=\; \mathrm{diag}(-1,\,+1)\,.
 $$
 
-Definimos un **operador de forma** \(C\) tal que \(C^2=\mathbb{1}\) y \([C,H_{\text{tot}}]=0\). La **métrica positiva efectiva** en el subespacio físico es
+Definimos un **operador de forma** \(C\) tal que \
+
+$$
+(C^2=\mathbb{1}\) y \([C,H_{\text{tot}}]=0\)
+$$
+
+La **métrica positiva efectiva** en el subespacio físico es
 
 $$
 \eta_C \;\equiv\; C\,\eta \;>\; 0 \quad \text{en } \mathcal{H}_{\text{phys}}\,,
@@ -596,7 +602,13 @@ $$
 \;+\; \sqrt{\frac{2\,\Gamma_\chi\,T_{GH}}{\tau_\chi^2}}\,\xi_\chi(t)\,,
 $$
 
-donde \(T_{GH}=\tfrac{H}{2\pi}\), \(\Gamma_i=\alpha_i\,3H\) y \(\xi_i(t)\) son ruidos blancos unitarios. Las ecuaciones de movimiento son
+donde 
+
+$$
+\(T_{GH}=\tfrac{H}{2\pi}\), \(\Gamma_i=\alpha_i\,3H\) y \(\xi_i(t)\) 
+$$
+
+son ruidos blancos unitarios. Las ecuaciones de movimiento son
 
 $$
 \ddot\phi \;=\; -3H\,\dot\phi \;-\; \partial_\phi V(\phi,\chi) \;+\; \zeta_\phi \,,
@@ -606,7 +618,11 @@ $$
 
 ## B.2 Ecuación de Fokker–Planck tipo Kramers
 
-Para la densidad \(P(\mathbf{X},t)\),
+Para la densidad 
+
+$$
+\(P(\mathbf{X},t)\),
+$$
 
 $$
 \partial_t P \;=\; -\sum_i \partial_{x_i}\!\big[A_i(\mathbf{X})\,P\big]
@@ -614,7 +630,11 @@ $$
 $$
 
 donde los **drifts** \(A_i\) recogen los términos deterministas
+
+$$
 \((\dot\phi,\; -3H\dot\phi-\partial_\phi V+\zeta_\phi,\; \dot\chi,\; -3H\dot\chi-\partial_\chi V+\zeta_\chi,\; -\zeta_\phi/\tau_\phi,\; -\zeta_\chi/\tau_\chi)\)
+$$
+
 y la **difusión** es no nula en el subbloque \(\zeta\)-\(\zeta\):
 
 $$
@@ -627,13 +647,41 @@ siendo cero en los demás elementos (difusión aditiva sólo en \(\zeta\)).
 
 ## B.3 Estado cuasi-estacionario y reducción
 
-En régimen tardío, cuando \(H\simeq\text{cte}\) y la dinámica orbita un **atractor oscilatorio**, se verifica
+En régimen tardío, cuando 
+
+$$
+\(H\simeq\text{cte}\)
+$$
+
+y la dinámica orbita un **atractor oscilatorio**, se verifica
 
 $$
 \partial_t P_{\text{st}} \;\approx\; 0\,,
 $$
 
-con \(P_{\text{st}}\) aproximadamente **gaussiana** alrededor de la órbita límite y varianzas regidas por \(\big(T_{GH},\tau\big)\). Bajo **reducción adiabática**, se puede integrar el subespacio de \(\zeta\) y obtener un **kernel de memoria** efectivo para \((\phi,\dot\phi,\chi,\dot\chi)\).
+con 
+
+$$
+\(P_{\text{st}}\)
+$$
+
+aproximadamente **gaussiana** alrededor de la órbita límite y varianzas regidas por 
+
+$$
+\(\big(T_{GH},\tau\big)\)
+$$
+
+Bajo **reducción adiabática**, se puede integrar el subespacio de 
+
+$$
+\(\zeta\)
+$$
+
+y obtener un **kernel de memoria** efectivo para 
+
+$$
+\((\phi,\dot\phi,\chi,\dot\chi)\)
+$$
 
 ## B.4 Métricas de coherencia y estabilidad
 
@@ -646,8 +694,23 @@ Q \;=\; \frac{f_0}{\Delta f}\,,
 $$
 
 Empíricamente,
-- ruido **blanco** \((\tau\to 0)\): \(Q\downarrow\), \(\sigma_w\uparrow\);
-- **memoria finita** \((\tau>0)\): \(Q\uparrow\), \(\sigma_w\downarrow\) en una banda óptima.
+- ruido **blanco**
+
+$$
+\((\tau\to 0)\): \(Q\downarrow\)
+$$
+
+$$
+\(\sigma_w\uparrow\)
+$$
+
+- **memoria finita**
+
+$$
+\((\tau>0)\): \(Q\uparrow\), \(\sigma_w\downarrow\)
+$$
+
+en una banda óptima.
 
 > Lectura: la **memoria** \(\tau\) *templa* el ruido y transmite información geométrica con retardo suficiente para sostener coherencia.
 
