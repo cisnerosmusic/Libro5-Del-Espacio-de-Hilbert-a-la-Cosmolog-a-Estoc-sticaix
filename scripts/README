@@ -1,0 +1,111 @@
+# 📂 `scripts/` — Generación de figuras y métricas
+
+Herramientas para producir las **Figuras 1–4** del capítulo y archivos de soporte (CSV/TXT) a partir de:
+- **Simulación directa** (Euler–Maruyama, ruido OU ligado a \(T_{GH}=H/(2\pi)\)), o
+- **Datos reales** exportados a CSV (por ejemplo desde tu propio simulador).
+
+> **Licencia**: CC0 1.0 (Dominio público).  
+> **Autor base**: Ernesto Cisneros Cino.
+
+---
+
+## 🔧 Dependencias
+
+Instala una vez (dentro de tu entorno virtual si usas uno):
+
+```bash
+pip install numpy matplotlib pandas
+
+
+
+# Fig.1 – Diagramas de fase
+python scripts/gen_fig1_fase.py --simulate --steps 200000 --dt 0.002 --seed 7
+
+# Fig.2 – Espectro de potencia (f0, Δf, Q=f0/Δf)
+python scripts/gen_fig2_espectro.py --simulate --steps 200000 --dt-sim 0.002 --seed 7
+
+# Fig.3 – Ωφ, Ωχ, w_total + histograma
+python scripts/gen_fig3_observables.py --simulate --steps 200000 --dt-sim 0.002 --seed 7 --ma-window 3000
+
+# Fig.4 – Barrido en τ (Q(τ) y σ_w(τ))
+python scripts/gen_fig4_barrido_tau.py --tau-list 0,0.5,1,2,3,5 --n-real 8 --steps 160000 --dt 0.002
+
+
+python scripts/gen_fig2_espectro.py --simulate --steps 200000 --dt-sim 0.002 --seed 7
+python scripts/gen_fig2_espectro.py --from-csv --phi-chi-csv data/state.csv --dt 0.002
+
+
+
+python scripts/gen_fig3_observables.py --simulate --steps 200000 --dt-sim 0.002 --seed 7 --ma-window 3000
+python scripts/gen_fig3_observables.py --from-csv --phi-chi-csv data/state.csv --ma-window 3000
+
+
+
+python scripts/gen_fig4_barrido_tau.py --tau-list 0,0.5,1,2,3,5 --n-real 8 --steps 160000 --dt 0.002 --metric-source avg
+
+
+
+scripts/
+  gen_fig1_fase.py
+  gen_fig2_espectro.py
+  gen_fig3_observables.py
+  gen_fig4_barrido_tau.py
+assets/
+  fig1-fase.png
+  fig2-espectro.png
+  fig2-spectrum.csv
+  fig2-metrics.txt
+  fig3-observables.png
+  fig3-observables.csv
+  fig3-stats.txt
+  fig4-memoria.png
+  fig4-memoria.csv
+  fig4-memoria.txt
+
+
+
+PY=python
+
+fig1:
+	$(PY) scripts/gen_fig1_fase.py --simulate --steps 200000 --dt 0.002 --seed 7
+
+fig2:
+	$(PY) scripts/gen_fig2_espectro.py --simulate --steps 200000 --dt-sim 0.002 --seed 7
+
+fig3:
+	$(PY) scripts/gen_fig3_observables.py --simulate --steps 200000 --dt-sim 0.002 --seed 7 --ma-window 3000
+
+fig4:
+	$(PY) scripts/gen_fig4_barrido_tau.py --tau-list 0,0.5,1,2,3,5 --n-real 8 --steps 160000 --dt 0.002
+
+all: fig1 fig2 fig3 fig4
+
+
+
+USO
+
+make fig1
+make fig2
+make fig3
+make fig4
+make all
+
+
+
+REFERENCIA RAPIDA DE PARAMETRO DE MODELO
+
+--m_phi --m_chi --lambda_phi --lambda_chi --g --V0
+--alpha_phi --alpha_chi --tau_phi --tau_chi
+--phi0 --chi0 --dphi0 --dchi0
+
+
+
+
+**Commit (corto):**  
+`Add scripts/README with usage for Fig.1–4`
+
+**Extended (texto expandido):**  
+`README en /scripts con dependencias, quickstart, uso por script (simulate/CSV), salidas por figura, estructura esperada, Makefile opcional y troubleshooting.`
+
+¿Quieres que además te deje un `requirements.txt` y un `.gitignore` mínimos para que cualquiera pueda replicar fácilmente?
+::contentReference[oaicite:0]{index=0}
