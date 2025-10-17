@@ -21,7 +21,7 @@ sin restricciones, incluso con fines comerciales.
 - `notas/` → organización interna (edición, tareas, cambios).  
 - `referencias.md` → bibliografía profesional con DOIs/ISBN.  
 - `CONTRIBUTING.md` y `CODE_OF_CONDUCT.md` → colaboración abierta.  
-- `build-pdf.yml` → convierte capítulos a PDF automáticamente (artefacto).  
+- `build-pdf.yml`.  
 
 **Convenciones**
 - Fórmulas **en línea**: 
@@ -30,7 +30,7 @@ $$
 T_{GH}=\tfrac{H}{2\pi}
 $$
 
-- Fórmulas **en bloque** (dejar una línea en blanco antes y después):
+- Fórmulas **en bloque**:
   
 $$
 H^2=\tfrac12(\dot\phi^2+\dot\chi^2)+V(\phi,\chi)
