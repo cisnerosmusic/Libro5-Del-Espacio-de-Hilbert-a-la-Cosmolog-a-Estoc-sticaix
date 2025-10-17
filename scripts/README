@@ -107,5 +107,4 @@ REFERENCIA RAPIDA DE PARAMETRO DE MODELO
 **Extended (texto expandido):**  
 `README en /scripts con dependencias, quickstart, uso por script (simulate/CSV), salidas por figura, estructura esperada, Makefile opcional y troubleshooting.`
 
-¿Quieres que además te deje un `requirements.txt` y un `.gitignore` mínimos para que cualquiera pueda replicar fácilmente?
-::contentReference[oaicite:0]{index=0}
+
