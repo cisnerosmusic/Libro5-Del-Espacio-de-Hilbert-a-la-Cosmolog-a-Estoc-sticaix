@@ -8,7 +8,7 @@ MODOS DE USO
 1) Simulación directa (Euler–Maruyama):
    python scripts/gen_fig1_fase.py --simulate --steps 200000 --dt 0.002 --seed 42
 
-2) Cargar datos desde CSVs (de tu simulador):
+2) Cargar datos desde CSVs:
    python scripts/gen_fig1_fase.py --from-csv --phi-chi-csv data/state.csv
    # state.csv debe tener columnas: t,phi,dphi,chi,dchi (en ese orden o con encabezados)
 
