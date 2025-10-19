@@ -465,7 +465,12 @@ Físicamente, la **memoria** actúa como *temple* del ruido: transmite informaci
 
 ## 6.4 Observables y fenomenología efectiva
 
-- **Ecuación de estado tardía:** histograma concentrado alrededor de $\langle w\rangle\!\approx\!-1$ con cola controlada por $(g,\lambda_i,\tau,\alpha_i)$.  
+- **Ecuación de estado tardía:** histograma concentrado alrededor de $\langle w\rangle\!\approx\!-1$ con cola controlada por
+
+$$
+(g,\lambda_i,\tau,\alpha_i)
+$$
+
 - **Fracciones de energía** $(\Omega_\phi,\Omega_\chi)$: muestran *cross-talk* modulando la partición *matter/vacuum-like* en la aproximación al atractor.  
 - **Espectros de potencia**: un pico dominante $f_0$ y armónicos débiles; el ancho $\Delta f$ sirve como **termómetro de coherencia**.
 
@@ -487,9 +492,20 @@ El marco **geométrico–estocástico de dos campos** con **proyección pseudo-H
 
 - **Atracción oscilatoria** (coherencia con $Q$ elevado).  
 - **Transiciones emergentes** *matter-like* $\leftrightarrow$ *vacuum-like*.  
-- **Tardío vacuum-like** robusto con $\langle w\rangle\!\to\!-1$.  
+- **Tardío vacuum-like** robusto con
 
-La **memoria** $\tau$ no es un detalle técnico: es la **condición física** que permite **resiliencia**. El siguiente paso es cuantificar estas predicciones en perturbaciones y datos observacionales.
+$$
+\langle w\rangle\!\to\!-1
+$$
+
+
+La **memoria** 
+
+$$
+\tau
+$$
+
+no es un detalle técnico: es la **condición física** que permite **resiliencia**. El siguiente paso es cuantificar estas predicciones en perturbaciones y datos observacionales.
 
 
 # 7. Conclusiones
@@ -502,7 +518,17 @@ $$
 H_{\text{tot}}^{\dagger} \;=\; \eta_C\, H_{\text{tot}}\, \eta_C^{-1}
 $$
    
-   con métrica efectiva positiva $\eta_C>0$ en $\mathcal{H}_{\text{phys}}$.
+   con métrica efectiva positiva 
+
+$$
+\eta_C>0
+$$ 
+
+en 
+
+$$
+\mathcal{H}_{\text{phys}}
+$$
 
 2. **Lazo geometría–ruido.** La expansión regula **disipación** y **fluctuación** mediante
    
@@ -528,7 +554,12 @@ $$
 
 ## Líneas futuras
 
-- **Ajuste Bayesiano** a datos (Planck 2018, BAO, SNe) y exploración sistemática del espacio de parámetros $(g,\lambda_i,\alpha_i,\tau)$.
+- **Ajuste Bayesiano** a datos (Planck 2018, BAO, SNe) y exploración sistemática del espacio de parámetros
+
+$$
+(g,\lambda_i,\alpha_i,\tau)
+$$
+
 - **Perturbaciones espaciales** y espectros (CMB/LSS), incluida posible **no-Gaussianidad** inducida por memoria.
 - **Derivación ab initio** del ruido coloreado desde **Schwinger–Keldysh** para consolidar los kernels no locales.
 - **Extensiones multiescala** (tres campos, acoplamientos cruzados dependientes de $H$) y análisis de robustez del atractor.
@@ -540,15 +571,31 @@ $$
 
 # Apéndice A — Estructura pseudo-Hermítica (Krein) resumida
 
-## A.1 Métrica, operador \(C\) y proyección
+## A.1 Métrica, operador 
 
-Usamos un espacio tipo **Krein** con métrica indefinida actuando sobre \((\phi,\chi)\):
+$$
+\(C\)
+$$
+
+y proyección
+
+Usamos un espacio tipo **Krein** con métrica indefinida actuando sobre 
+
+$$
+\((\phi,\chi)\):
+$%
 
 $$
 \eta \;=\; \mathrm{diag}(-1,\,+1)\,.
 $$
 
-Definimos un **operador de forma** \(C\) tal que \
+Definimos un **operador de forma** 
+
+$$
+\(C\)
+$$
+
+tal que 
 
 $$
 (C^2=\mathbb{1}\) y \([C,H_{\text{tot}}]=0\)
@@ -566,7 +613,11 @@ $$
 H_{\text{tot}}^{\dagger} \;=\; \eta_C \, H_{\text{tot}} \, \eta_C^{-1}\,,
 $$
 
-que garantiza **espectro real** y **evolución unitaria** restringida a \(\mathcal{H}_{\text{phys}}\).
+que garantiza **espectro real** y **evolución unitaria** restringida a 
+
+$$
+\(\mathcal{H}_{\text{phys}}\)
+$$
 
 La **proyección** al subespacio físico se implementa con
 
@@ -576,9 +627,25 @@ $$
 
 ## A.2 Intuición operativa
 
-- La signatura de \(\eta\) **legitima** un modo “taquiónico” sin romper la unitariedad observable tras la proyección.  
-- El par \((\eta,C)\) **reetiqueta normas**: el sector de norma negativa queda **suprimido dinámicamente** (expansión + ruido coloreado).  
-- La dinámica efectiva conserva la **coherencia** en \(\mathcal{H}_{\text{phys}}\).
+- La signatura de
+
+$$
+\(\eta\)
+$$
+
+**legitima** un modo “taquiónico” sin romper la unitariedad observable tras la proyección.  
+- El par
+
+$$
+\((\eta,C)\)
+$$
+
+**reetiqueta normas**: el sector de norma negativa queda **suprimido dinámicamente** (expansión + ruido coloreado).  
+- La dinámica efectiva conserva la **coherencia** en
+
+$$
+\(\mathcal{H}_{\text{phys}}\)
+$$
 
 ---
 
@@ -629,13 +696,25 @@ $$
 \;+\; \tfrac12 \sum_{i,j} \partial_{x_i}\partial_{x_j}\!\big[D_{ij}(\mathbf{X})\,P\big]\,,
 $$
 
-donde los **drifts** \(A_i\) recogen los términos deterministas
+donde los **drifts** 
+
+$$
+\(A_i\)
+$$
+
+recogen los términos deterministas
 
 $$
 \((\dot\phi,\; -3H\dot\phi-\partial_\phi V+\zeta_\phi,\; \dot\chi,\; -3H\dot\chi-\partial_\chi V+\zeta_\chi,\; -\zeta_\phi/\tau_\phi,\; -\zeta_\chi/\tau_\chi)\)
 $$
 
-y la **difusión** es no nula en el subbloque \(\zeta\)-\(\zeta\):
+y la **difusión** es no nula en el subbloque 
+
+$$
+\(\zeta\)-\(\zeta\)
+$$
+
+:
 
 $$
 D_{\zeta_\phi\zeta_\phi} \;=\; \frac{2\,\Gamma_\phi\,T_{GH}}{\tau_\phi^2}\,,
