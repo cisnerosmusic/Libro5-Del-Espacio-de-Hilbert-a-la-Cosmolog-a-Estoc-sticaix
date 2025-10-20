@@ -26,6 +26,7 @@ El signo negativo no es un error: es la huella del **desequilibrio** que mantien
 ### 2.2. Definición del espacio y métrica
 
 Sea $\mathcal{K}$ un espacio vectorial complejo con forma bilineal indefinida
+
 $$
 \langle \psi_1,\psi_2\rangle_{\eta}
 \;=\;
