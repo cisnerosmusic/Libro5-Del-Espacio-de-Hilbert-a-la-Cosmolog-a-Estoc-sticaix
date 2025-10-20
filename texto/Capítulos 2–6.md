@@ -163,23 +163,24 @@ El término imaginario $i\,b\,\Phi^3$ introduce una “**fuerza fantasma**” qu
 ### 3.2. Dinámica general
 
 $$
-\ddot\Phi+3H\dot\Phi+\frac{\partial V_{\text{PT}}}{\partial \Phi^\ast}=\zeta(t),
+\ddot{\Phi} + 3H\,\dot{\Phi} + \frac{\partial V_{\text{PT}}}{\partial \Phi^{\ast}} \;=\; \zeta(t),
 \qquad
-\dot\zeta=-\frac{\zeta}{\tau}+\sqrt{\frac{2\,\Gamma\,T_{GH}}{\tau^2}}\,\xi(t),
-\quad T_{GH}=\frac{H}{2\pi}.
+\dot{\zeta} \;=\; -\frac{\zeta}{\tau} \;+\; \sqrt{\frac{2\,\Gamma\,T_{GH}}{\tau^{2}}}\,\xi(t),
+\quad T_{GH} \;=\; \frac{H}{2\pi}.
 $$
 
 Separando partes reales:
 
 $$
 \begin{cases}
-\ddot\phi_r=-3H\dot\phi_r-\partial_{\phi_r}V_R+\partial_{\phi_i}V_I+\zeta_r,\\[4pt]
-\ddot\phi_i=-3H\dot\phi_i-\partial_{\phi_i}V_R-\partial_{\phi_r}V_I+\zeta_i,
+\ddot{\phi}_{r} \;=\; -3H\,\dot{\phi}_{r} \;-\; \partial_{\phi_{r}} V_{R} \;+\; \partial_{\phi_{i}} V_{I} \;+\; \zeta_{r},\\[6pt]
+\ddot{\phi}_{i} \;=\; -3H\,\dot{\phi}_{i} \;-\; \partial_{\phi_{i}} V_{R} \;-\; \partial_{\phi_{r}} V_{I} \;+\; \zeta_{i},
 \end{cases}
 $$
 
-donde $V_R,V_I$ son partes real e imaginaria del potencial.  
-La simetría PT exige oscilación alrededor de una curva $\phi_i=f(\phi_r)$ que mantiene **espectro real**.
+donde $V_{R}, V_{I}$ son las partes real e imaginaria del potencial.  
+La simetría PT exige oscilación alrededor de una curva $\phi_{i}=f(\phi_{r})$ que mantiene **espectro real**.
+
 
 ---
 
