@@ -268,23 +268,29 @@ $$
 ---
 
 ### 4.3. Variante B — Dos fluidos acoplados con retardo
-Dos componentes efectivas:  
-- $\rho_m(t)$ (matter-like, $w_m\approx 0$)  
-- $\rho_v(t)$ (vacuum-like, $w_v\approx -1$)
 
-Acopladas mediante un **término de intercambio retardado**:
+Dos componentes efectivas:
 
+- $\rho_m(t)$ (matter-like, $w_m \approx 0$)  
+- $\rho_v(t)$ (vacuum-like, $w_v \approx -1$)
 
+Acopladas mediante un término de intercambio **retardado**:
 $$
 \begin{cases}
-\dot{\rho}_m+3H(1+w_m)\rho_m=+Q[\rho_v](t),\\[4pt]
-\dot{\rho}_v+3H(1+w_v)\rho_v=-Q[\rho_v](t),
+\dot{\rho}_m + 3H(1+w_m)\,\rho_m \;=\; +\,Q[\rho_v](t),\\[6pt]
+\dot{\rho}_v + 3H(1+w_v)\,\rho_v \;=\; -\,Q[\rho_v](t),
 \end{cases}
+$$
+
+con
+$$
+Q[\rho_v](t) \;=\; \displaystyle\int_{0}^{t} \mathcal{K}_\tau(t-t')\,\rho_v(t')\,dt',
 \qquad
-Q[\rho_v](t)=\int_0^t \mathcal{K}_\tau(t-t')\,\rho_v(t')\,dt'.
+\mathcal{K}_\tau(\Delta t) \;=\; \frac{1}{\tau}\,e^{-\Delta t / \tau}.
 $$
 
 El retardo **estabiliza**: con $\tau=0$ el sistema tiende a equilibrio térmico; con $\tau>0$ **oscila** entre regímenes.
+
 
 ---
 
