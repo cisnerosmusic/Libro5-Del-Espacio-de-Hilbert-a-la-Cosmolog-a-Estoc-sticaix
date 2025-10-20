@@ -210,8 +210,8 @@ If you use this work, please cite:
 
 - **Author**: Ernesto Cisneros Cino
 - **Email**: ernestocisnerosmusic@gmail.com
-- **Web**: [vitrius.xyz](https://vitrius.xyz)
-- **Twitter/X**: [@ernestocc](https://twitter.com/ernestocc)
+- **Web**: [vitrius.xyz](https://ernestocisneros.art)
+- **Twitter/X**: [@ernestcisneros1](https://twitter.com/ernestcisneros1)
 
 ---
 
