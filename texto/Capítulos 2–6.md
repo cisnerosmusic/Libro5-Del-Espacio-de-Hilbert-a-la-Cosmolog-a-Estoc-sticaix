@@ -28,16 +28,10 @@ El signo negativo no es un error: es la huella del **desequilibrio** que mantien
 Sea $\mathcal{K}$ un espacio vectorial complejo con forma bilineal indefinida
 
 $$
-\langle \psi_1,\psi_2\rangle_{\eta}
-\;=\;
-\psi_1^{\dagger}\,\eta\,\psi_2,
-\qquad
-\eta
-=
-\begin{pmatrix}
--1 & 0 \\
-0 & +1
-\end{pmatrix}.
+\begin{aligned}
+\langle \psi_1,\psi_2\rangle_{\eta} &= \psi_1^{\dagger}\,\eta\,\psi_2,\\[4pt]
+\eta &= \begin{pmatrix} -1 & 0 \\ 0 & +1 \end{pmatrix}
+\end{aligned}
 $$
 
 El campo taquiónico $\phi$ vive en el subespacio de norma negativa; el campo estable $\chi$, en el positivo.
