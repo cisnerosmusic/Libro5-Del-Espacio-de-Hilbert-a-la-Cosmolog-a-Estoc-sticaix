@@ -29,7 +29,7 @@ Sea $\mathcal{K}$ un espacio vectorial complejo con forma bilineal indefinida
 
 $$
 \begin{aligned}
-\langle \psi_1,\psi_2\rangle_{\eta} &= \psi_1^{\dagger}\,\eta\,\psi_2,\\[4pt]
+\langle \psi_1,\psi_2\rangle_{\eta} &= \psi_1^{\dagger},\eta,\psi_2,[4pt]
 \eta &= \begin{pmatrix} -1 & 0 \\ 0 & +1 \end{pmatrix}
 \end{aligned}
 $$
@@ -283,21 +283,23 @@ Dos componentes efectivas:
 - $\rho_m(t)$ (matter-like, $w_m \approx 0$)  
 - $\rho_v(t)$ (vacuum-like, $w_v \approx -1$)
 
-Acopladas mediante un término de intercambio **retardado**:
+Acopladas mediante un término de intercambio 
 
-$$
-\begin{cases}
-\dot{\rho}_m + 3H(1+w_m)\,\rho_m \;=\; +\,Q[\rho_v](t),\\[6pt]
-\dot{\rho}_v + 3H(1+w_v)\,\rho_v \;=\; -\,Q[\rho_v](t),
-\end{cases}
-$$
+**Sistema acoplado con retardo:**
+
+- $\dot{\rho}_m + 3H(1+w_m)\rho_m = +Q(\rho_v)(t)$  
+- $\dot{\rho}_v + 3H(1+w_v)\rho_v = -Q(\rho_v)(t)$
+
+
+
 
 con
+
 $$
-Q[\rho_v](t) \;=\; \displaystyle\int_{0}^{t} \mathcal{K}_\tau(t-t')\,\rho_v(t')\,dt',
-\qquad
-\mathcal{K}_\tau(\Delta t) \;=\; \frac{1}{\tau}\,e^{-\Delta t / \tau}.
+Q(\rho_v) = \int_0^t \mathcal{K}_\tau(t - t') \, \rho_v(t') \, dt', \qquad
+\mathcal{K}_\tau(\Delta t) = \frac{1}{\tau} e^{-\Delta t / \tau}
 $$
+
 
 El retardo **estabiliza**: con $\tau=0$ el sistema tiende a equilibrio térmico; con $\tau>0$ **oscila** entre regímenes.
 
