@@ -179,12 +179,12 @@ Separando partes reales:
 
 $$
 \begin{cases}
-\ddot{\phi}_{r} \;=\; -3H\,\dot{\phi}_{r} \;-\; \partial_{\phi_{r}} V_{R}
-\;+\; \partial_{\phi_{i}} V_{I} \;+\; \zeta_{r},\\[6pt]
-\ddot{\phi}_{i} \;=\; -3H\,\dot{\phi}_{i} \;-\; \partial_{\phi_{i}} V_{R}
-\;-\; \partial_{\phi_{r}} V_{I} \;+\; \zeta_{i},
+\ddot{\phi}_r = -3H\,\dot{\phi}_r - \partial_{\phi_r} V_R + \partial_{\phi_i} V_I + \zeta_r \\
+\ddot{\phi}_i = -3H\,\dot{\phi}_i - \partial_{\phi_i} V_R - \partial_{\phi_r} V_I + \zeta_i
 \end{cases}
 $$
+
+
 
 donde $V_{R},\,V_{I}$ son las partes real e imaginaria del potencial.
 La simetría PT exige oscilación alrededor de una curva $\phi_{i}=f(\phi_{r})$ que mantiene espectro real.
