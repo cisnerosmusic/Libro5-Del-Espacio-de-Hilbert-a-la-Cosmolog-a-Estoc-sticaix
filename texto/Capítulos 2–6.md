@@ -284,6 +284,7 @@ Dos componentes efectivas:
 - $\rho_v(t)$ (vacuum-like, $w_v \approx -1$)
 
 Acopladas mediante un término de intercambio **retardado**:
+
 $$
 \begin{cases}
 \dot{\rho}_m + 3H(1+w_m)\,\rho_m \;=\; +\,Q[\rho_v](t),\\[6pt]
