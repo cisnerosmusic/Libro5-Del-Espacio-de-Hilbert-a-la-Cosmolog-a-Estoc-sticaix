@@ -29,10 +29,11 @@ Sea $\mathcal{K}$ un espacio vectorial complejo con forma bilineal indefinida
 
 $$
 \begin{aligned}
-\langle \psi_1,\psi_2\rangle_{\eta} &= \psi_1^{\dagger},\eta,\psi_2,[4pt]
+\langle \psi_1, \psi_2 \rangle_{\eta} &= \psi_1^\dagger \, \eta \, \psi_2 \\
 \eta &= \begin{pmatrix} -1 & 0 \\ 0 & +1 \end{pmatrix}
 \end{aligned}
 $$
+
 
 El campo taquiónico $\phi$ vive en el subespacio de norma negativa; el campo estable $\chi$, en el positivo.
 La métrica efectiva redefine la noción de probabilidad: la estabilidad no depende solo del signo del término cuadrático, sino del equilibrio dinámico entre subespacios.
