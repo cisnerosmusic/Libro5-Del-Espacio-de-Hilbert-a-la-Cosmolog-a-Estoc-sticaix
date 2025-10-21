@@ -1,0 +1,19 @@
+name: cosmologia_estocastica
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.10
+  - numpy
+  - scipy
+  - matplotlib
+  - jupyter
+  - pandas
+  - sympy
+  - seaborn
+  - scikit-learn
+  - tqdm
+  - pip
+  - pip:
+      - notebook
+      - ipykernel
