@@ -197,7 +197,7 @@ If you use this work, please cite:
            Memory as Cosmic Resilience},
   year = {2025},
   publisher = {GitHub},
-  howpublished = {\url{https://github.com/[username]/[repo]}},
+  howpublished = {https://github.com/cisnerosmusic/Del-Espacio-de-Hilbert-a-la-Cosmologia-Estocastica},
   note = {Speculative framework without empirical validation}
 }
 ```
